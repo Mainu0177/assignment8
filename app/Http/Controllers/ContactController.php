@@ -14,21 +14,6 @@ class ContactController extends Controller
         return view('contact');
     }//end method
 
-    // public function FormSubmit(Request $request)
-    // {
-    //     // dd($request->all());
-    //     $data = [
-    //         "name" => $request->input('name'),
-    //         "email" => $request->input('email'),
-    //         "phone" => $request->input('phone'),
-    //         "message"=> $request->input('message'),
-    //     ];
-
-    //     Session::put('success','Contact data send successfully');
-
-    //     return view('testPage', ['data' => $data]);
-    // }//end method
-
         public function FormSubmit(Request $request){
             try {
                 $data = [
